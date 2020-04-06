@@ -1,0 +1,67 @@
+</DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Formulaire</title>
+	</head>
+	<body>
+		Bonjour, veuillez remplir le formulaire suivant.
+		<br>
+		<form method="POST" action="Formulaire_v.1.php"> <br>
+			Nom : <input type="text" name="nom"/> <br>
+			Prénom : <input type="text" name="prénom"/> <br></br>
+			Quel est votre cycle scolaire ?
+			<br>
+			<label for="liste">Je suis en : </label>
+			<select name="classe" id="liste">
+				<option value="erreur_1">6&egraveme</option><!--Les 6èmes, 5èmes, ... et les 2ndes sont considérés comme trop jeunes avec un message d'erreur qui s'affiche-->
+				<option value="erreur_1">5&egraveme</option>
+				<option value="erreur_1">4&egraveme</option>
+				<option value="erreur_1">3&egraveme</option>
+				<option value="erreur_1">2nde</option>
+				<option value="1ère">1&egravere</option>
+				<option value="terminale">Terminale</option>
+				<option value="erreur_2">Post bac</option><!--Les post bac sont trop vieux, un autre message d'erreur-->
+			</select>
+			<br></br>
+			Quelle est votre classe ?<br>
+			<input type="radio" name="sous_classe" value="1" id="c_1"/><label for="c_1">Cycle g&eacuten&eacuteral</label></br>
+			<input type="radio" name="sous_classe" value="2" id="c_2"/><label for="c_2">Cycle professionnel</label></br>
+			<br>
+			<!--Il faudrait réussir à faire que les bonnes spés soient présentées en fonction du cycle choisi (général ou pro)-->
+			Si vous &ecirctes en cycle professionnel, dans quelle branche &ecirctes vous ?<br>
+			<input type="radio" name="cycle_pro" value="1" id="c_1"/><label for="c_1">STAV Sciences et technologies de l'agronomie et du vivant</label></br>
+			<input type="radio" name="cycle_pro" value="2" id="c_1"/><label for="c_2">STHR Sciences et technologies de l'hôtellerie et de la restauration</label></br>
+			<input type="radio" name="cycle_pro" value="3" id="c_1"/><label for="c_3">STI2D Sciences et technologies de l'industrie et du développement durable</label></br>
+			<input type="radio" name="cycle_pro" value="4" id="c_1"/><label for="c_4">STL Sciences et technologies de laboratoire</label></br>
+			<input type="radio" name="cycle_pro" value="5" id="c_1"/><label for="c_5">ST2S Sciences et technologies de la santé et du social</label></br>
+			<input type="radio" name="cycle_pro" value="6" id="c_1"/><label for="c_6">STD2A Sciences et technologie du design et des arts appliqués</label></br>
+			<input type="radio" name="cycle_pro" value="7" id="c_1"/><label for="c_7">S2TMD Sciences et techniques du management du théâtre, de la musique et de la danse</label></br>
+			<input type="radio" name="cycle_pro" value="8" id="c_1"/><label for="c_8">STMG Sciences et technologies du management et de la gestion</label></br>
+			
+			<br>
+			<!--Normalement on ne peut choisir QUE 3 SPÉ, alors comment bloquer le nombre de choix ?-->
+			<!--C'est bon k'ai un moyen de compter le nombre de cases choisies-->
+			Si vous &ecirctes en cycle g&eacuten&eacuteral, quelles sp&eacutecialit&eacutes avez vous choisi ?<br>
+			<!--Le cycle art a plusieurs sous-choix, il faudrait réussir à les proposer-->
+			<input type="checkbox" name="spé_1" value="1" id="c_1"/><label for="c_1"></label>Arts</br>
+			<input type="checkbox" name="spé_2" value="1" id="c_1"/><label for="c_1"></label>Biologie-écologie</br>
+			<input type="checkbox" name="spé_3" value="1" id="c_1"/><label for="c_1"></label>Histoire-géographie, géopolitique et sciences politiques</br>
+			<input type="checkbox" name="spé_4" value="1" id="c_1"/><label for="c_1"></label>Humanités, littérature et philosophie</br>
+			<input type="checkbox" name="spé_5" value="1" id="c_1"/><label for="c_1"></label>Langues, littératures et cultures étrangères et régionales</br>
+			<input type="checkbox" name="spé_6" value="1" id="c_1"/><label for="c_1"></label>Littérature, langues et cultures de l'Antiquité</br>
+			<input type="checkbox" name="spé_7" value="1" id="c_1"/><label for="c_1"></label>Mathématiques</br>
+			<input type="checkbox" name="spé_8" value="1" id="c_1"/><label for="c_1"></label>Numérique et sciences informatiques</br>
+			<input type="checkbox" name="spé_9" value="1" id="c_1"/><label for="c_1"></label>Physique-chimie</br>
+			<input type="checkbox" name="spé_10" value="1" id="c_1"/><label for="c_1"></label>Sciences de l'ingénieur</br>
+			<input type="checkbox" name="spé_11" value="1" id="c_1"/><label for="c_1"></label>Sciences de la vie et de la Terre</br>
+			<input type="checkbox" name="spé_12" value="1" id="c_1"/><label for="c_1"></label>Sciences économiques et sociales</br>
+			<br></br>
+			<textarea name="commentaire">Avez vous quelque chose &agrave ajouter ?</textarea>
+			
+			<br></br>
+			<button type="submit" name="Envoi">Envoyer</button>
+		</form>
+	</body>
+	
+</html>
