@@ -13,8 +13,12 @@
 			$message = $_POST['message'];
 			if ($choix_1 == $choix_2 or $choix_1 == $choix_3 or $choix_2 == $choix_3) {
 				echo "<b>Vous avez choisi plusieurs spécialités identiques<b><br>";
-			}elseif($spé_ab != $choix_1 xor $spé_ab != $choix_2 xor $spé_ab != $choix_3) {
-				echo "<b>Vous comptez abandonner une spécialité que vous n'avez pas choisi, ce n'est pas possible<b><br>";
+			}elseif ($spé_ab != "jsp") {
+				if ($spé_ab != $choix_1 xor $spé_ab != $choix_2 xor $spé_ab != $choix_3) {
+					echo "<b>Vous comptez abandonner une spécialité que vous n'avez pas choisi, ce n'est pas possible<b><br>";
+				}else{
+					header ('Location: Réussite.html');
+				}
 			}else{
 				header ('Location: Réussite.html');
 			}
