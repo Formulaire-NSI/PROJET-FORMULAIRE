@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Formulaire 1</title>
+	</head>
+	<body>
+		Bonjour, veuillez remplir le formulaire suivant.
+		<br>
+		<form method="POST" action="Final.php"> <br>
+			Nom : <input type="text" name="nom"/> <br>
+			Prénom : <input type="text" name="prénom"/> <br></br>
+			Quel est votre classe ?
+			<br>
+			<label for="liste">Je suis en : </label>
+			<select name="classe" id="liste">
+				<option value="erreur_1">6&egraveme</option><!--Les 6èmes, 5èmes, ... et les 2ndes sont considérés comme trop jeunes avec un message d'erreur qui s'affiche-->
+				<option value="erreur_1">5&egraveme</option>
+				<option value="erreur_1">4&egraveme</option>
+				<option value="erreur_1">3&egraveme</option>
+				<option value="2nde">2nde</option>
+				<option value="1ère">1&egravere</option>
+				<option value="terminale">Terminale</option>
+				<option value="erreur_1">Post bac</option><!--Les post bac sont trop vieux, un autre message d'erreur-->
+			</select>
+			<br></br>
+			Quelle est votre cycle ?<br>
+			<input type="radio" name="cycle" value="1" id="c_1"/><label for="c_1">Cycle g&eacuten&eacuteral</label></br>
+			<input type="radio" name="cycle" value="2" id="c_2"/><label for="c_2">Cycle professionnel</label></br>
+			<br>
+			<button type="submit" name="Envoi">Envoyer</button>
+		</form>
+	</body>
+</html>
