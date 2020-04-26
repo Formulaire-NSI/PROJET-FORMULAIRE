@@ -1,0 +1,23 @@
+body
+{
+	background-color: LightGreen;
+	background-image:url("image_de_fond.jpg");
+	font: 18px arial;
+	margin: 0;
+}
+
+#prin
+{
+	position: absolute;
+	width: 1000px;
+	background-color: FloralWhite;
+	left: 50%;
+	top: 250px;
+	margin-left: -500px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 25px;
+	color: darkslategrey;
+	text-align: justify;
+	border-radius: 20px 20px 20px 20px;
+}
